@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Vetube</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+        integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!--Navigation bar-->
+    <nav class="navbar">
+        <div class="logo">
+            <h2><span id="bar" onclick="showSidenav()"><i class="fas fa-bars"></i></span>
+                <a href="index.html"><span style="color: blue;margin-right: 5px;">
+                        <i class="fas fa-play-circle"></i></span>VeTube</a></h2>
+        </div>
+        <ul class="nav-link">
+            <li><a href="#"><span style="margin-right: 5px;"><img src="img/avatar.jpg" alt="user"></span>Farman</a></li>
+        </ul>
+    </nav>
+
+    <!--Container-->
+    <div class="container">
+        <!--Left column (sidebar)-->
+        <div class="left-column">
+            <ul class="left-link">
+                <li id="close" onclick="hideSidenav()"><i class="fas fa-times"></i></li>
+                <li>
+                    <div class="search-bar">
+                        <div class="search-text">
+                            <input type="text" name="search" placeholder="Search" autocomplete="off" required>
+                        </div>
+                        <div class="search-button">
+                            <a href="#"><button type="submit" class="search-btn-div">
+                                    <i class="fas fa-search"></i></button></a>
+                        </div>
+                    </div>
+                </li>
+                <hr class="horizontal-line">
+                <li><a href="#"><span><i class="fas fa-home"></i></span>Home</a></li>
+                <li><a href="#"><span><i class="fas fa-fire"></i></span>Trending</a></li>
+                <li><a href="#"><span><i class="fas fa-rss-square"></i></span>Subscription</a></li>
+                <hr class="horizontal-line">
+                <p class="section-header">Options</p>
+                <li><a href="#"><span><i class="fas fa-photo-video"></i></span>Library</a></li>
+                <li><a href="#"><span><i class="fas fa-history"></i></span>History</a></li>
+                <li><a href="#"><span><i class="fas fa-video"></i></span>Your videos</a></li>
+                <li><a href="#"><span><i class="fas fa-clock"></i></span>Watch later</a></li>
+                <li><a href="#"><span><i class="fas fa-thumbs-up"></i></span>Liked videos</a></li>
+                <hr class="horizontal-line">
+                <p class="section-header">Category</p>
+                <li><a href="#"><span><i class="fas fa-gamepad"></i></span>Gaming</a></li>
+                <li><a href="#"><span><i class="fas fa-tshirt"></i></span>Fashion</a></li>
+                <li><a href="#"><span><i class="fas fa-film"></i></span>Movies</a></li>
+                <li><a href="#"><span><i class="fas fa-music"></i></span>Musics</a></li>
+                <li><a href="#"><span><i class="fas fa-map-marker-alt"></i></span>Travel</a></li>
+                <li><a href="#"><span><i class="fas fa-heartbeat"></i></span>Health</a></li>
+                <hr class="horizontal-line">
+                <p class="section-header">More</p>
+                <li><a href="#"><span><i class="fas fa-cog"></i></span>Settings</a></li>
+                <li><a href="#"><span><i class="fas fa-flag"></i></span>Report</a></li>
+                <li><a href="#"><span><i class="fas fa-info-circle"></i></span>Help</a></li>
+                <li><a href="#"><span><i class="fas fa-comment-dots"></i></span>Feedback</a></li>
+            </ul>
+        </div>
+        <!--Right column-->
+        <div class="right-column">
+            <!-- Featured videos section -->
+            <h3 class="header">Featured videos</h3>
+            <div class="trending">
+                <a href="#" class="item">
+                    <div class="card-img">
+                        <img src="img/cool5.png" alt="thumbnail">
+                        <div class="time-tag">2:48</div>
+                        <div class="middle">
+                            <span><i class="fas fa-play-circle"></i></span>
+                        </div>
+                    </div>
+                    <div class="card-text">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                        <p class="channel-name">Channel Name</p>
+                        <div class="views-date">
+                            <p><span><i class="fas fa-eye"></i></span>1.8M views</p>
+                            <p><span><i class="fas fa-calendar-alt"></i></span>18 Months ago</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="item">
+                    <div class="card-img">
+                        <img src="img/cool2.png" alt="thumbnail">
+                        <div class="time-tag">2:48</div>
+                        <div class="middle">
+                            <span><i class="fas fa-play-circle"></i></span>
+                        </div>
+                    </div>
+                    <div class="card-text">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                        <p class="channel-name">Channel Name</p>
+                        <div class="views-date">
+                            <p><span><i class="fas fa-eye"></i></span>1.8M views</p>
+                            <p><span><i class="fas fa-calendar-alt"></i></span>18 Months ago</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="item">
+                    <div class="card-img">
+                        <img src="img/cool3.png" alt="thumbnail">
+                        <div class="time-tag">2:48</div>
+                        <div class="middle">
+                            <span><i class="fas fa-play-circle"></i></span>
+                        </div>
+                    </div>
+                    <div class="card-text">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                        <p class="channel-name">Channel Name</p>
+                        <div class="views-date">
+                            <p><span><i class="fas fa-eye"></i></span>1.8M views</p>
+                            <p><span><i class="fas fa-calendar-alt"></i></span>18 Months ago</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="item">
+                    <div class="card-img">
+                        <img src="img/cool10.png" alt="thumbnail">
+                        <div class="time-tag">2:48</div>
+                        <div class="middle">
+                            <span><i class="fas fa-play-circle"></i></span>
+                        </div>
+                    </div>
+                    <div class="card-text">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                        <p class="channel-name">Channel Name</p>
+                        <div class="views-date">
+                            <p><span><i class="fas fa-eye"></i></span>1.8M views</p>
+                            <p><span><i class="fas fa-calendar-alt"></i></span>18 Months ago</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Recommendation section -->
+            <h3 class="header">Recommendation</h3>
+            <div class="recommend-row">
+                <a href="#" class="item">
+                    <div class="card-img">
+                        <img src="img/cool4.png" alt="thumbnail">
+                        <div class="time-tag">2:48</div>
+                        <div class="middle">
+                            <span><i class="fas fa-play-circle"></i></span>
+                        </div>
+                    </div>
+                    <div class="card-text">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                        <p class="channel-name">Channel Name</p>
+                        <div class="views-date">
+                            <p><span><i class="fas fa-eye"></i></span>1.8M views</p>
+                            <p><span><i class="fas fa-calendar-alt"></i></span>18 Months ago</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="item">
+                    <div class="card-img">
+                        <img src="img/cool5.png" alt="thumbnail">
+                        <div class="time-tag">2:48</div>
+                        <div class="middle">
+                            <span><i class="fas fa-play-circle"></i></span>
+                        </div>
+                    </div>
+                    <div class="card-text">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                        <p class="channel-name">Channel Name</p>
+                        <div class="views-date">
+                            <p><span><i class="fas fa-eye"></i></span>1.8M views</p>
+                            <p><span><i class="fas fa-calendar-alt"></i></span>18 Months ago</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="item">
+                    <div class="card-img">
+                        <img src="img/cool6.png" alt="thumbnail">
+                        <div class="time-tag">2:48</div>
+                        <div class="middle">
+                            <span><i class="fas fa-play-circle"></i></span>
+                        </div>
+                    </div>
+                    <div class="card-text">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                        <p class="channel-name">Channel Name</p>
+                        <div class="views-date">
+                            <p><span><i class="fas fa-eye"></i></span>1.8M views</p>
+                            <p><span><i class="fas fa-calendar-alt"></i></span>18 Months ago</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="item">
+                    <div class="card-img">
+                        <img src="img/cool7.png" alt="thumbnail">
+                        <div class="time-tag">2:48</div>
+                        <div class="middle">
+                            <span><i class="fas fa-play-circle"></i></span>
+                        </div>
+                    </div>
+                    <div class="card-text">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                        <p class="channel-name">Channel Name</p>
+                        <div class="views-date">
+                            <p><span><i class="fas fa-eye"></i></span>1.8M views</p>
+                            <p><span><i class="fas fa-calendar-alt"></i></span>18 Months ago</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="item">
+                    <div class="card-img">
+                        <img src="img/cool8.png" alt="thumbnail">
+                        <div class="time-tag">2:48</div>
+                        <div class="middle">
+                            <span><i class="fas fa-play-circle"></i></span>
+                        </div>
+                    </div>
+                    <div class="card-text">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                        <p class="channel-name">Channel Name</p>
+                        <div class="views-date">
+                            <p><span><i class="fas fa-eye"></i></span>1.8M views</p>
+                            <p><span><i class="fas fa-calendar-alt"></i></span>18 Months ago</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="item">
+                    <div class="card-img">
+                        <img src="img/cool9.png" alt="thumbnail">
+                        <div class="time-tag">2:48</div>
+                        <div class="middle">
+                            <span><i class="fas fa-play-circle"></i></span>
+                        </div>
+                    </div>
+                    <div class="card-text">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                        <p class="channel-name">Channel Name</p>
+                        <div class="views-date">
+                            <p><span><i class="fas fa-eye"></i></span>1.8M views</p>
+                            <p><span><i class="fas fa-calendar-alt"></i></span>18 Months ago</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Channel section -->
+            <h3 class="header">Popular Channels</h3>
+            <div class="channel-row">
+                <div class="channel-item">
+                    <img src="img/person1.png" alt="channel-name">
+                    <p><a href="#">Channel name</a></p>
+                    <p>320,3350 subscribers</p>
+                    <button>Subscribe 3.2M</button>
+                </div>
+                <div class="channel-item">
+                    <img src="img/person2.png" alt="channel-name">
+                    <p><a href="#">Channel name</a></p>
+                    <p>320,3350 subscribers</p>
+                    <button>Subscribe 3.2M</button>
+                </div>
+                <div class="channel-item">
+                    <img src="img/person3.png" alt="channel-name">
+                    <p><a href="#">Channel name</a></p>
+                    <p>320,3350 subscribers</p>
+                    <button>Subscribe 3.2M</button>
+                </div>
+                <div class="channel-item">
+                    <img src="img/person4.png" alt="channel-name">
+                    <p><a href="#">Channel name</a></p>
+                    <p>320,3350 subscribers</p>
+                    <button>Subscribe 3.2M</button>
+                </div>
+            </div>
+
+            <!-- Featured videos section -->
+            <h3 class="header">Popular categories</h3>
+            <div class="category-row">
+                <div class="category-item">
+                    <img src="img/person1.png" alt="channel-name">
+                    <p><a href="#">Education</a></p>
+                    <p>1250 Videos</p>
+                </div>
+                <div class="category-item">
+                    <img src="img/person2.png" alt="channel-name">
+                    <p><a href="#">Travelling</a></p>
+                    <p>1250 Videos</p>
+                </div>
+                <div class="category-item">
+                    <img src="img/person3.png" alt="channel-name">
+                    <p><a href="#">Gaming</a></p>
+                    <p>1250 Videos</p>
+                </div>
+                <div class="category-item">
+                    <img src="img/person4.png" alt="channel-name">
+                    <p><a href="#">Cooking</a></p>
+                    <p>1250 Videos</p>
+                </div>
+                <div class="category-item">
+                    <img src="img/person5.png" alt="channel-name">
+                    <p><a href="#">Health</a></p>
+                    <p>1250 Videos</p>
+                </div>
+                <div class="category-item">
+                    <img src="img/person6.png" alt="channel-name">
+                    <p><a href="#">Sports</a></p>
+                    <p>1250 Videos</p>
+                </div>
+            </div>
+
+            <footer>
+                <div class="left-footer">
+                    <p>&copy; Copyright 2020 VeTube, All Rights Reserved</p>
+                    <p>Created & Design by <span>Farman Hafeez</span></p>
+                </div>
+                <div class="right-footer">
+                    <a href="#">Home</a>
+                    <a href="#">Contact</a>
+                    <a href="#">About</a>
+                    <a href="#">Privacy policy</a>
+                    <a href="#">Terms & conditions</a>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    <!-- JavaScript code -->
+    <script>
+        function showSidenav() {
+            document.querySelector('.left-column').style.display = "block";
+            document.querySelector('.right-column').style.display = "none";
+        }
+
+        function hideSidenav() {
+            document.querySelector('.left-column').style.display = "none";
+            document.querySelector('.right-column').style.display = "block";
+        }
+    </script>
+
+</body>
+
+</html>
